@@ -1,13 +1,14 @@
 from langchain_community.document_loaders import PyPDFLoader, Docx2txtLoader, UnstructuredHTMLLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_openai import OpenAIEmbeddings
 from langchain_chroma import Chroma
 from typing import List
 from langchain_core.documents import Document
+from langchain_huggingface import HuggingFaceEmbeddings
+
 import os
 
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200, length_function=len)
-embedding_function = OpenAIEmbeddings()
+embedding_function = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 vectorstore = Chroma(persist_directory="./chroma_db", embedding_function=embedding_function)
 
 def load_and_split_document(file_path: str) -> List[Document]:

@@ -6,6 +6,10 @@ from chroma_utils import index_document_to_chroma, delete_doc_from_chroma
 import os
 import uuid
 import logging
+import shutil 
+
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "savvy-hull-430006-e8-8e7beba4a8d5.json"
+
 logging.basicConfig(filename='app.log', level=logging.INFO)
 app = FastAPI()
 
@@ -29,9 +33,7 @@ def chat(query_input: QueryInput):
     logging.info(f"Session ID: {session_id}, AI Response: {answer}")
     return QueryResponse(answer=answer, session_id=session_id, model=query_input.model)
 
-from fastapi import UploadFile, File, HTTPException
-import os
-import shutil
+
 
 @app.post("/upload-doc")
 def upload_and_index_document(file: UploadFile = File(...)):

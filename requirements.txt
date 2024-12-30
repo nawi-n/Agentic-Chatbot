@@ -1,9 +1,13 @@
 langchain
-langchain-openai
 langchain-core
 langchain_community
 docx2txt
 pypdf
 langchain_chroma
-python-multipart
+sentence_transformers
+fastapi
 streamlit
+langchain-google-genai
+python-multipart
+uvicorn
+langchain_huggingface
