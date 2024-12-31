@@ -3,7 +3,7 @@ from api_utils import upload_document, list_documents, delete_document
 
 def display_sidebar():
     # Sidebar: Model Selection
-    model_options = ["Gemini 2.0 Flash", "Gemini 1.5 Pro"]
+    model_options = ["gemini-2.0-flash-exp", "gemini-1.5-pro"]
     st.sidebar.selectbox("Select Model", options=model_options, key="model")
 
     # Sidebar: Upload Document
@@ -35,7 +35,7 @@ def display_sidebar():
         # Delete Document
         selected_file_id = st.sidebar.selectbox("Select a document to delete", options=[doc['id'] for doc in documents], format_func=lambda x: next(doc['filename'] for doc in documents if doc['id'] == x))
         if st.sidebar.button("Delete Selected Document"):
-            with st.spinner("Deleting..."):
+            with st.spinner("Deleting..."): 
                 delete_response = delete_document(selected_file_id)
                 if delete_response:
                     st.sidebar.success(f"Document with ID {selected_file_id} deleted successfully.")

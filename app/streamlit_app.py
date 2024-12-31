@@ -2,6 +2,8 @@ import streamlit as st
 from sidebar import display_sidebar
 from chat_interface import display_chat_interface
 
+st.set_page_config(page_title="Travel Chatbot", layout="centered", initial_sidebar_state="auto")
+
 st.title("Travel Chatbot")
 
 # Initialize session state variables

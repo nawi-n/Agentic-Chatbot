@@ -66,4 +66,4 @@ def delete_document(file_id):
             return None
     except Exception as e:
         st.error(f"An error occurred while deleting the document: {str(e)}")
-        return None
+        return None 
