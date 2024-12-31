@@ -158,3 +158,12 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+api\chroma_db
+/api/chroma_db
+/api/chroma_db
+api/rag_app.db
+api/chroma_db/chroma.sqlite3
+api/chroma_db/edddc1eb-c68b-44b2-af3b-4ab92bb104e2/length.bin
+api/rag_app.db
+api/rag_app.db
