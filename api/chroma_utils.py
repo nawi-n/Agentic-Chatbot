@@ -32,8 +32,10 @@ def index_document_to_chroma(file_path: str, file_id: int) -> bool:
         for split in splits:
             split.metadata['file_id'] = file_id
         
-        vectorstore.add_documents(splits)
-        # vectorstore.persist()
+        batch_size = 100  # Set batch size
+        for i in range(0, len(splits), batch_size):
+            batch = splits[i:i + batch_size]
+            vectorstore.add_documents(batch)        # vectorstore.persist()
         return True
     except Exception as e:
         print(f"Error indexing document: {e}")
