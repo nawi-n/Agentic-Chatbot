@@ -20,20 +20,20 @@ def chat(query_input: QueryInput):
     if not session_id:
         session_id = str(uuid.uuid4())
 
-    
-
-    chat_history = get_chat_history(session_id)
-    rag_chain = get_rag_chain(query_input.model.value)
-    answer = rag_chain.invoke({
-        "input": query_input.question,
-        "chat_history": chat_history
-    })['answer']
-    
-    insert_application_logs(session_id, query_input.question, answer, query_input.model.value)
-    logging.info(f"Session ID: {session_id}, AI Response: {answer}")
-    return QueryResponse(answer=answer, session_id=session_id, model=query_input.model)
-
-
+    try:
+        chat_history = get_chat_history(session_id)
+        rag_chain = get_rag_chain(query_input.model.value)
+        answer = rag_chain.invoke({
+            "input": query_input.question,
+            "chat_history": chat_history
+        })['answer']
+        
+        insert_application_logs(session_id, query_input.question, answer, query_input.model.value)
+        logging.info(f"Session ID: {session_id}, AI Response: {answer}")
+        return QueryResponse(answer=answer, session_id=session_id, model=query_input.model)
+    except Exception as e:
+        logging.error(f"Error processing chat request: {str(e)}")
+        raise HTTPException(status_code=500, detail="Error processing your request")
 
 @app.post("/upload-doc")
 def upload_and_index_document(file: UploadFile = File(...)):
