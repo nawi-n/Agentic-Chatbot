@@ -1,13 +1,1 @@
-{
-  "type": "service_account",
-  "project_id": "savvy-hull-430006-e8",
-  "private_key_id": "8e7beba4a8d514fe79aea45241a92f19aff3f70b",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDTAL32man36m8s\n/dfOq/dfLL0LN04bljM1Ec83VWP2g860uu9q5jEpEOwCRIe048EIVpkcoQ2y2pe4\nZXeQrFDKW4Ug/sd3zYOFSYk3mBBXkGO/2XB/SwbjGQAPxBBXza7IxV/q9Tw/ESv6\nhWEmPiVmh9OrXuMELpWVQVOjJYZtpSWv5+qaO3K39nPWDanWhPjyWq6MKjLiMefa\nBOlfCCWiLSw+v/n2uisOe8vqH5iwCpa/yoYZkz8t23e/E6QTuHl1dMGZBsGUpTGQ\n0Bf2OiZwrtmAEKaUGzfDUXKunq7ZkN165ky1jq+5nTtG3bAulY3tlOJgv0IaYuR/\nv743dd6dAgMBAAECggEAEX9Y7BTcvheiwIhhrQcgVwl5Y8S3pXH/LRdyUj8H2xlz\nEBRbEPJQgVH16vo5MWGcUE9eGGcCoSJKEpssycKAW0eGSAYuDwaWhtG3n0ns5lYC\n75XdzlsvvFqxC/L7p/cBLNpb6eVhlEPy8a4TMFNW+/mng+k1H35SyTMcTHCAL/dV\n7+nSM7PS1gVNL3YogAFRdn6F/2BJwjGIBI1ojybnP5vSq6iSw2f5Sefz/GmKsefJ\n+4ZV0eZDvi/T60Y1lVhaR38nbDsyylo6uUiR8Ljyu/aL+WiMOsmskibh4i6TNXWp\nqfCHWOMP+zFkrc32IEEkk4px296RPM2K/nIWXktOAQKBgQD+K37N/YLk4mXDUkLL\nm9BWrnDPUjsPwhQoxhMImq4PPe6dIscb5MzgUtY9rt9MVl/1uzTR2fskrkrQI2KG\nIexCnvfuYyix6tJ5dOvnMQdocNa0QkPE3b8eelySF5ggLMMEhbPlyKCZQOyZqVti\nBQ/fdKSHtW5N5i+hfQZzYzVj+QKBgQDUha2Y1bd+C7K0j7GfId/Gk42V95C/hdVq\nIMDGDDph9I4XLEZR0t2ezi3R22YmYNXITe2R8eX4Hy1SK6uMsZS19zSFzHrfaufV\nlpYIYzWYFYPco5XZQ8YFYirzwjcKl0h8xr4GAsyCFCJxauNYS5kMtokYzTY1fV1a\nD6yBE3twxQKBgQCe2JQRLMSnQw6SOVDhaumTosWB7ERZHtP2f4PZtsHdaLk9n0SM\nnDumXl7ige2wCbNDIdJq7C5WyE6dMeAbMAw1vp/4biQ6vST5Hydnf26/yPWGBnvQ\nBz2wUIyWCQTb5t2ib+T0UKR94uN7TSp9Yeh/oKhK4AqlyJwv8rEbX/84EQKBgQDK\nXnjN3kSaS/1hnqsewxzZdMwQD+vP1FtCcenfLOmzOTLMsiZL6CWNAPv0p5z/0pn/\n4OTmYpf/y4BWjKsQkFDxbXKgLfSbJquYYYqAdigkp+gmg8c/WiAIJFCOSVQsS56E\n4qM0Cho/i3i403WlMGePCYpHCbIjATuRdPdo+epDmQKBgQCDHD784IV5/SFGv/1a\n5bj2v8MQce0Db+ecapD4tNOOE/oiWt0YUZkcWNEKHE4JuwXqVI6EAmnxC8d3b3kc\nUlYw4hNijDUWc9pNTmXhmMJmwHb70RvAtCJqkSTsceOBUFgnEoQ0md/Z14P7Vo4U\n1R7MNTmDPK/2FFIUZ8POEQMNNw==\n-----END PRIVATE KEY-----\n",
-  "client_email": "chatbot@savvy-hull-430006-e8.iam.gserviceaccount.com",
-  "client_id": "106031279092858641877",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/chatbot%40savvy-hull-430006-e8.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
-}
+
